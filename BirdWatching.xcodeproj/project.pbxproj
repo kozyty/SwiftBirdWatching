@@ -13,6 +13,8 @@
 		A20FE1761965517D005C14F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20FE1741965517D005C14F7 /* Main.storyboard */; };
 		A20FE1781965517D005C14F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20FE1771965517D005C14F7 /* Images.xcassets */; };
 		A20FE1841965517D005C14F7 /* BirdWatchingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FE1831965517D005C14F7 /* BirdWatchingTests.swift */; };
+		A20FE18E196552CD005C14F7 /* BirdSighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FE18D196552CD005C14F7 /* BirdSighting.swift */; };
+		A22899E51966A8D9000A25CA /* BirdSightingDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22899E41966A8D9000A25CA /* BirdSightingDataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		A20FE17D1965517D005C14F7 /* BirdWatchingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdWatchingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20FE1821965517D005C14F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20FE1831965517D005C14F7 /* BirdWatchingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdWatchingTests.swift; sourceTree = "<group>"; };
+		A20FE18D196552CD005C14F7 /* BirdSighting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirdSighting.swift; sourceTree = "<group>"; };
+		A22899E41966A8D9000A25CA /* BirdSightingDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirdSightingDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				A20FE1741965517D005C14F7 /* Main.storyboard */,
 				A20FE1771965517D005C14F7 /* Images.xcassets */,
 				A20FE16C1965517D005C14F7 /* Supporting Files */,
+				A20FE18D196552CD005C14F7 /* BirdSighting.swift */,
+				A22899E41966A8D9000A25CA /* BirdSightingDataController.swift */,
 			);
 			path = BirdWatching;
 			sourceTree = "<group>";
@@ -213,7 +219,9 @@
 			files = (
 				A20FE1731965517D005C14F7 /* DetailViewController.swift in Sources */,
 				A20FE1711965517D005C14F7 /* MasterViewController.swift in Sources */,
+				A22899E51966A8D9000A25CA /* BirdSightingDataController.swift in Sources */,
 				A20FE16F1965517D005C14F7 /* AppDelegate.swift in Sources */,
+				A20FE18E196552CD005C14F7 /* BirdSighting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +409,7 @@
 				A20FE1891965517D005C14F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A20FE18A1965517D005C14F7 /* Build configuration list for PBXNativeTarget "BirdWatchingTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +418,7 @@
 				A20FE18C1965517D005C14F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
