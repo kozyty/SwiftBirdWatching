@@ -15,6 +15,7 @@
 		A20FE1841965517D005C14F7 /* BirdWatchingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FE1831965517D005C14F7 /* BirdWatchingTests.swift */; };
 		A20FE18E196552CD005C14F7 /* BirdSighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FE18D196552CD005C14F7 /* BirdSighting.swift */; };
 		A22899E51966A8D9000A25CA /* BirdSightingDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22899E41966A8D9000A25CA /* BirdSightingDataController.swift */; };
+		A2EF3DB8196D436E0004D7CF /* AddSightingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF3DB7196D436E0004D7CF /* AddSightingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		A20FE1831965517D005C14F7 /* BirdWatchingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdWatchingTests.swift; sourceTree = "<group>"; };
 		A20FE18D196552CD005C14F7 /* BirdSighting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirdSighting.swift; sourceTree = "<group>"; };
 		A22899E41966A8D9000A25CA /* BirdSightingDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirdSightingDataController.swift; sourceTree = "<group>"; };
+		A2EF3DB7196D436E0004D7CF /* AddSightingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSightingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				A20FE16C1965517D005C14F7 /* Supporting Files */,
 				A20FE18D196552CD005C14F7 /* BirdSighting.swift */,
 				A22899E41966A8D9000A25CA /* BirdSightingDataController.swift */,
+				A2EF3DB7196D436E0004D7CF /* AddSightingViewController.swift */,
 			);
 			path = BirdWatching;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20FE1731965517D005C14F7 /* DetailViewController.swift in Sources */,
+				A2EF3DB8196D436E0004D7CF /* AddSightingViewController.swift in Sources */,
 				A20FE1711965517D005C14F7 /* MasterViewController.swift in Sources */,
 				A22899E51966A8D9000A25CA /* BirdSightingDataController.swift in Sources */,
 				A20FE16F1965517D005C14F7 /* AppDelegate.swift in Sources */,

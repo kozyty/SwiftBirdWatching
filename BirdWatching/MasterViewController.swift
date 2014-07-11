@@ -20,6 +20,10 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -51,7 +55,7 @@ class MasterViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
-        return true
+        return false
     }
 
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -60,7 +64,14 @@ class MasterViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
-
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if (segue.identifier?.isEqual("ShowSightingDetails")) {
+            var indexPath: NSIndexPath = self.tableView.indexPathForSelectedRow();
+            var birdSighting:BirdSighting = self.dataController.objectInListAtIndex(indexPath.row)
+            var detailViewController:DetailViewController = segue.destinationViewController as DetailViewController
+            detailViewController.sighting = birdSighting
+        }
+    }
 }
 

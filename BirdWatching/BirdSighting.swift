@@ -9,11 +9,11 @@
 import Foundation
 
 class BirdSighting: NSObject {
-    var name: NSString
-    var location: NSString
+    var name: String
+    var location: String
     var date: NSDate
     
-    init(name: NSString, location: NSString, date: NSDate) {
+    init(name: String, location: String, date: NSDate) {
         self.name = name
         self.location = location
         self.date = date

@@ -8,25 +8,23 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UITableViewController {
 
-    @IBOutlet var detailDescriptionLabel: UILabel
-
-
-    var detailItem: AnyObject? {
-        didSet {
-            // Update the view.
-            self.configureView()
-        }
-    }
-
+    @IBOutlet var birdNameLabel: UILabel
+    
+    @IBOutlet var locationLabel: UILabel
+    
+    @IBOutlet var dateLabel: UILabel
+    
+    var sighting: BirdSighting?
+    
     func configureView() {
-        // Update the user interface for the detail item.
-        if let detail: AnyObject = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.description
-            }
-        }
+        let formatter = NSDateFormatter()
+        formatter.dateStyle = .MediumStyle
+        
+        self.birdNameLabel.text = self.sighting?.name
+        self.locationLabel.text = self.sighting?.location
+        self.dateLabel.text = formatter.stringFromDate(sighting?.date)
     }
 
     override func viewDidLoad() {
@@ -39,7 +37,5 @@ class DetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
